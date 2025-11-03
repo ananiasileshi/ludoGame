@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo King™ - Play Online Ludo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="main-menu" class="screen active">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <h1>Ludo King™</h1>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link">HOME</a></li>
+                        <li><a href="#about" class="nav-link">ABOUT</a></li>
+                        <li><a href="#features" class="nav-link">FEATURES</a></li>
+                        <li><a href="#media" class="nav-link">MEDIA</a></li>
+                        <li><a href="#download" class="nav-link">DOWNLOAD</a></li>
+                        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                        <li><button class="play-now-btn" id="play-now-nav">Play Now</button></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+
+            <section id="home" class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">#1 game on google play & app store</div>
+                        <h1 class="hero-title">India's No.1 Game!</h1>
+                        <p class="hero-description">
+                            Ludo King, the popular Ludo game, is a digital adaptation of the classic Ludo board game available on mobile. 
+                            It offers online and offline multiplayer modes with many features for nonstop entertainment.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary hero-play-btn" id="new-game-btn">Play Now</button>
+                            <button class="btn btn-secondary" id="resume-btn">Resume Game</button>
+                        </div>
+                    </div>
+                    <div class="hero-game">
+                        <div class="game-preview">
+                            <canvas id="preview-board" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about-section">
+                <div class="container">
+                    <h2 class="section-title">about us</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3>India's No.1 Game!</h3>
+                            <p>
+                                Ludo King, the popular Ludo game, is a digital adaptation of the classic Ludo board game available on mobile. 
+                                It offers online and offline multiplayer modes with many features for nonstop entertainment. With its colorful design, 
+                                engaging gameplay, and nostalgic appeal, Ludo King has become one of the top downloaded games worldwide.
+                            </p>
+                            <div class="about-buttons">
+                                <button class="btn btn-primary" id="read-more-btn">Read More</button>
+                                <button class="btn btn-secondary" id="media-coverage-btn">MEDIA coverage</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="features-section">
+                <div class="container">
+                    <h2 class="section-title">Game Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎮</div>
+                            <h3>Multiplayer Mode</h3>
+                            <p>Play with friends online or offline with up to 4 players</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎲</div>
+                            <h3>Classic Gameplay</h3>
+                            <p>Traditional Ludo rules with modern enhancements</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏆</div>
+                            <h3>Tournaments</h3>
+                            <p>Compete in tournaments and climb the leaderboards</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h3>Cross Platform</h3>
+                            <p>Play on any device - mobile, tablet, or desktop</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="media" class="media-section">
+                <div class="container">
+                    <h2 class="section-title">MEDIA coverage</h2>
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <h4>Ludo King surpasses 1 billion Play Store downloads in meteoric moment for Indian games industry</h4>
+                            <p class="media-date">February 26, 2024</p>
+                        </div>
+                        <div class="media-item">
+                            <h4>Apple Announces App Store's Top Apps and Games of 2023</h4>
+                            <p class="media-date">December 13, 2023</p>
+                        </div>
+                        <div class="media-item">
+                            <h4>Women in India spend more time on gaming than men, study shows!</h4>
+                            <p class="media-date">April 06, 2023</p>
+                        </div>
+                        <div class="media-item">
+                            <h4>Google Play's best apps and games of 2022 in India</h4>
+                            <p class="media-date">December 01, 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="download" class="download-section">
+                <div class="container">
+                    <h2 class="section-title">Download</h2>
+                    <div class="download-content">
+                        <div class="download-text">
+                            <h3>Play Anywhere, Anytime!</h3>
+                            <p>Download Ludo King on your favorite platform and enjoy the classic board game experience with friends and family.</p>
+                            <div class="download-buttons">
+                                <button class="btn btn-primary download-btn">
+                                    <span class="download-icon">📱</span>
+                                    Play Store
+                                </button>
+                                <button class="btn btn-primary download-btn">
+                                    <span class="download-icon">🍎</span>
+                                    App Store
+                                </button>
+                                <button class="btn btn-secondary download-btn">
+                                    <span class="download-icon">🌐</span>
+                                    Play Online
+                                </button>
+                            </div>
+                        </div>
+                        <div class="download-stats">
+                            <div class="stat-card">
+                                <h4>1B+</h4>
+                                <p>Downloads</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4>4.2★</h4>
+                                <p>Rating</p>
+                            </div>
+                            <div class="stat-card">
+                                <h4>50M+</h4>
+                                <p>Active Players</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <p>Have questions, feedback, or need support? We'd love to hear from you!</p>
+                            <div class="contact-methods">
+                                <div class="contact-item">
+                                    <span class="contact-icon">📧</span>
+                                    <div>
+                                        <h4>Email Support</h4>
+                                        <p>support@ludoking.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">💬</span>
+                                    <div>
+                                        <h4>Live Chat</h4>
+                                        <p>Available 24/7 for instant help</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">🌐</span>
+                                    <div>
+                                        <h4>Social Media</h4>
+                                        <p>Follow us for updates and news</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h3>Send us a Message</h3>
+                            <form class="contact-form-fields">
+                                <input type="text" placeholder="Your Name" required>
+                                <input type="email" placeholder="Your Email" required>
+                                <select required>
+                                    <option value="">Select Topic</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="business">Business Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="container">
+                    <h2 class="cta-title">play now for free!</h2>
+                    <button class="btn btn-primary btn-large" id="play-now-cta">Play Now</button>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <p>&copy; 2024 Ludoking. All Rights Reserved.</p>
+                        <div class="footer-links">
+                            <a href="#" id="rules-btn">FAQ'S</a>
+                            <span>|</span>
+                            <a href="#">RNG Certification</a>
+                            <span>|</span>
+                            <a href="#">Privacy Policy</a>
+                            <span>|</span>
+                            <a href="#">Terms Of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div id="setup-screen" class="screen">
+            <div class="menu-container">
+                <h2>Game Setup</h2>
+                <div class="setup-form">
+                    <div class="form-group">
+                        <label>Number of Players</label>
+                        <div class="player-count-buttons">
+                            <button class="player-count-btn" data-count="2">2</button>
+                            <button class="player-count-btn active" data-count="3">3</button>
+                            <button class="player-count-btn" data-count="4">4</button>
+                        </div>
+                    </div>
+                    
+                    <div id="players-config" class="players-config">
+                    </div>
+
+                    <div class="form-group">
+                        <label>CPU Difficulty (for CPU players)</label>
+                        <select id="cpu-difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-secondary" id="back-to-menu">Back</button>
+                        <button class="btn btn-primary" id="start-game-btn">Start Game</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <div class="header-left">
+                    <h2 id="current-player-name">Player's Turn</h2>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn" id="save-game-btn" title="Save Game">💾</button>
+                    <button class="icon-btn" id="menu-btn" title="Menu">☰</button>
+                </div>
+            </div>
+
+            <div class="game-container">
+                <div class="board-container">
+                    <canvas id="game-board" width="800" height="800"></canvas>
+                </div>
+
+                <div class="game-sidebar">
+                    <div class="players-status" id="players-status">
+                    </div>
+
+                    <div class="dice-container">
+                        <div id="dice" class="dice">
+                            <div class="dice-face">?</div>
+                        </div>
+                        <button class="btn btn-primary" id="roll-dice-btn">Roll Dice (Space)</button>
+                    </div>
+
+                    <div class="game-log" id="game-log">
+                        <h3>Game Log</h3>
+                        <div class="log-entries" id="log-entries">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="end-screen" class="screen">
+            <div class="menu-container">
+                <canvas id="confetti-canvas"></canvas>
+                <h1 class="winner-title">🏆 <span id="winner-name"></span> Wins!</h1>
+                <div class="game-stats" id="game-stats">
+                </div>
+                <div class="menu-buttons">
+                    <button class="btn btn-primary" id="new-game-end">New Game</button>
+                    <button class="btn btn-secondary" id="main-menu-end">Main Menu</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="rules-screen" class="screen">
+            <div class="menu-container rules-container">
+                <h2>How to Play Ludo</h2>
+                <div class="rules-content">
+                    <h3>Objective</h3>
+                    <p>Be the first player to move all 4 tokens from your base to your home (finish area).</p>
+                    
+                    <h3>Game Rules</h3>
+                    <ul>
+                        <li><strong>Starting:</strong> Roll a 6 to move a token out of your base onto the starting square.</li>
+                        <li><strong>Movement:</strong> Roll the dice and move one of your tokens by the number shown.</li>
+                        <li><strong>Extra Turn:</strong> Rolling a 6 gives you an extra turn.</li>
+                        <li><strong>Capturing:</strong> Landing on an opponent's token (on non-safe squares) sends it back to their base.</li>
+                        <li><strong>Safe Squares:</strong> Starting squares and colored home lanes are safe from captures.</li>
+                        <li><strong>Winning:</strong> Move all 4 tokens into your home finish area to win!</li>
+                    </ul>
+
+                    <h3>Controls</h3>
+                    <ul>
+                        <li><strong>Mouse/Touch:</strong> Click/tap to roll dice and select tokens.</li>
+                        <li><strong>Keyboard:</strong> Press Space or Enter to roll dice. Use Tab and Enter to select tokens.</li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary" id="close-rules">Got it!</button>
+            </div>
+        </div>
+
+        <div id="settings-screen" class="screen">
+            <div class="menu-container">
+                <h2>Settings</h2>
+                <div class="settings-content">
+                    <div class="setting-item">
+                        <label>
+                            <input type="checkbox" id="sound-toggle" checked>
+                            <span>Sound Effects</span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>
+                            <input type="checkbox" id="theme-toggle">
+                            <span>Dark Mode</span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>
+                            <span>Animation Speed</span>
+                            <select id="animation-speed">
+                                <option value="0.5">Fast</option>
+                                <option value="1" selected>Normal</option>
+                                <option value="1.5">Slow</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="close-settings">Close</button>
+            </div>
+        </div>
+
+        <div id="history-screen" class="screen">
+            <div class="menu-container">
+                <h2>Match History</h2>
+                <div class="history-content" id="history-content">
+                </div>
+                <div class="history-actions">
+                    <button class="btn btn-secondary" id="clear-history">Clear History</button>
+                    <button class="btn btn-primary" id="close-history">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="navigation.js"></script>
+    <script src="app.js"></script>
+    <script src="board-patch.js"></script>
+    <script src="game-fix.js"></script>
+</body>
+</html>

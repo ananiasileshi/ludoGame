@@ -1,0 +1,124 @@
+╔══════════════════════════════════════════════════════════════╗
+║                    🎲 LUDOVERSE QUICKSTART 🎲                ║
+╚══════════════════════════════════════════════════════════════╝
+
+📂 PROJECT STRUCTURE
+--------------------
+LudoVerse/
+├── index.html          ← Open this file to play!
+├── styles.css          ← All styling
+├── app.js              ← Game logic
+├── README.md           ← Full documentation
+├── FEATURES.md         ← Complete feature list
+├── QUICKSTART.txt      ← This file
+└── assets/             ← Optional resources folder
+
+
+🚀 HOW TO RUN
+-------------
+1. Double-click "index.html" OR
+2. Right-click "index.html" → Open with → Your Browser OR
+3. Drag "index.html" into your browser window
+
+That's it! No installation, no build, no server needed!
+
+
+🎮 QUICK CONTROLS
+-----------------
+Mouse/Touch:
+  • Click dice to roll
+  • Click token to move
+
+Keyboard:
+  • Space/Enter = Roll dice
+  • Tab = Navigate
+  • Enter = Activate
+
+
+⚙️ QUICK SETTINGS
+------------------
+• Dark Mode: Settings → Toggle Dark Mode
+• Sound: Settings → Toggle Sound Effects
+• Speed: Settings → Animation Speed (Fast/Normal/Slow)
+
+
+💾 SAVE/LOAD
+------------
+• Save: Click 💾 icon during game
+• Load: Main Menu → Resume Game
+
+
+🎯 QUICK RULES
+---------------
+1. Roll 6 to exit base
+2. Rolling 6 = extra turn
+3. Land on opponent = capture (they go back to base)
+4. Safe squares = starting positions + home lanes
+5. Exact roll needed to finish
+6. First to finish all 4 tokens wins!
+
+
+🎨 GAME MODES
+-------------
+• 2-4 Players: Local multiplayer
+• vs CPU: Play against AI (Easy/Medium/Hard)
+• Mixed: Humans + CPU together
+
+
+📱 DEVICE SUPPORT
+-----------------
+✅ Desktop (Windows, Mac, Linux)
+✅ Tablet (iPad, Android tablets)
+✅ Mobile (iPhone, Android phones)
+✅ Works on screens 360px and wider
+
+
+🌐 BROWSER SUPPORT
+------------------
+✅ Chrome/Edge (Recommended)
+✅ Firefox
+✅ Safari
+✅ Opera
+
+
+🎨 FEATURES HIGHLIGHTS
+----------------------
+✨ Modern, clean UI
+🌓 Light/Dark themes
+📱 Fully responsive
+⌨️ Keyboard accessible
+🎵 Sound effects
+💾 Save/Load games
+📊 Match history
+🏆 Victory animations
+🤖 Smart CPU opponents
+⚡ Smooth animations
+
+
+🐛 TROUBLESHOOTING
+------------------
+Problem: Game won't load
+→ Enable JavaScript in browser
+→ Try different browser
+→ Check console (F12) for errors
+
+Problem: Can't save game
+→ Exit private/incognito mode
+→ Allow localStorage in browser settings
+
+Problem: Board not showing
+→ Update browser to latest version
+→ Enable hardware acceleration
+→ Resize window to refresh
+
+
+📞 NEED HELP?
+-------------
+Check README.md for detailed documentation
+Check FEATURES.md for complete feature list
+
+
+🎉 ENJOY PLAYING LUDOVERSE!
+---------------------------
+Have fun and may the best player win! 🏆
+
