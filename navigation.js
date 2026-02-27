@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     if (typeof game !== 'undefined' && game.showSetup) {
                         game.showSetup();
+                    } else if (typeof window.showSetup === 'function') {
+                        window.showSetup();
                     }
                 }, 100);
             });
