@@ -81,6 +81,28 @@ function setupNewGameSystem() {
     drawBoard();
     
     function setupEventListeners() {
+        // Global event delegation to avoid losing listeners if DOM nodes are replaced
+        document.addEventListener('click', function(e) {
+            const target = e.target;
+            if (!target) return;
+
+            const btn = target.closest ? target.closest('button') : null;
+            if (!btn || !btn.id) return;
+
+            if (btn.id === 'new-game-btn') {
+                e.preventDefault();
+                showSetup();
+            }
+
+            if (btn.id === 'back-to-menu') {
+                e.preventDefault();
+                // Back from setup to main menu
+                hideAllScreens();
+                const menu = document.getElementById('main-menu');
+                if (menu) menu.classList.add('active');
+            }
+        }, true);
+
         // Player count selection
         const playerCountButtons = document.querySelectorAll('.player-count-btn');
         playerCountButtons.forEach(btn => {
@@ -684,6 +706,11 @@ function setupNewGameSystem() {
             screen.classList.remove('active');
         });
     }
+
+    // Expose minimal navigation helpers globally (used by navigation.js)
+    window.showSetup = showSetup;
+    window.showGameScreen = showGameScreen;
+    window.hideAllScreens = hideAllScreens;
     
     console.log('New game system setup complete');
 }
