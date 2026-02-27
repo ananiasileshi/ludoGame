@@ -1220,7 +1220,7 @@ select:focus {
 }
 
 .game-log {
-    display: none;
+    display: block;
 }
 
 .game-log h3 {
