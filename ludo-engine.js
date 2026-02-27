@@ -144,8 +144,22 @@ class LudoGameState {
 class LudoBoard {
     constructor() {
         this.mainTrack = this.generateMainTrack();
+        this.validateMainTrack(this.mainTrack);
         this.homeColumns = this.generateHomeColumns();
         this.safeSquares = new Set(GAME_CONSTANTS.SAFE_SQUARES);
+    }
+
+    validateMainTrack(track) {
+        const coordKeys = track.map(p => `${p.x},${p.y}`);
+        const unique = new Set(coordKeys);
+
+        if (track.length !== GAME_CONSTANTS.MAIN_TRACK_SIZE || unique.size !== track.length) {
+            console.error('Invalid main track generated', {
+                expectedLength: GAME_CONSTANTS.MAIN_TRACK_SIZE,
+                actualLength: track.length,
+                uniqueSquares: unique.size
+            });
+        }
     }
 
     /**
